@@ -1,0 +1,72 @@
+Unhandled exception in internal background task 'tracker'.
+Traceback (most recent call last):
+  File "/home/tsekho/.local/lib/python3.8/site-packages/discord/ext/tasks/__init__.py", line 169, in _loop
+    await self.coro(*args, **kwargs)
+  File "/home/tsekho/JB/cog_tracker.py", line 72, in tracker
+    await self.database.compare_records(guild_id, response)
+  File "/home/tsekho/JB/core/database.py", line 134, in compare_records
+    if await self.accountants[guild_id][steam_id].check_missing():
+KeyError: '76561198916575563'
+Ignoring exception in view <BlockView timeout=40 children=8> for item <Button style=<ButtonStyle.success: 3> url=None disabled=False label='Confirm' emoji=None row=2>:
+Traceback (most recent call last):
+  File "/home/tsekho/.local/lib/python3.8/site-packages/discord/ui/view.py", line 367, in _scheduled_task
+    await interaction.response.defer()
+  File "/home/tsekho/.local/lib/python3.8/site-packages/discord/interactions.py", line 439, in defer
+    await adapter.create_interaction_response(
+  File "/home/tsekho/.local/lib/python3.8/site-packages/discord/webhook/async_.py", line 191, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+Ignoring exception in on_ready
+Traceback (most recent call last):
+  File "/home/tsekho/.local/lib/python3.8/site-packages/discord/client.py", line 352, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/tsekho/JB/cog_tracker.py", line 59, in on_ready
+    await self.set_status_done()
+  File "/home/tsekho/JB/cog_tracker.py", line 44, in set_status_done
+    count = self.api.get_player_count() if count is not None else "?"
+UnboundLocalError: local variable 'count' referenced before assignment
+Ignoring exception in on_ready
+Traceback (most recent call last):
+  File "/home/tsekho/.local/lib/python3.8/site-packages/discord/client.py", line 352, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/tsekho/JB/cog_tracker.py", line 59, in on_ready
+    await self.set_status_done()
+  File "/home/tsekho/JB/cog_tracker.py", line 44, in set_status_done
+    count = self.api.get_player_count() if count is not None else "?"
+UnboundLocalError: local variable 'count' referenced before assignment
+Ignoring exception in on_ready
+Traceback (most recent call last):
+  File "/home/tsekho/.local/lib/python3.8/site-packages/discord/client.py", line 352, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/tsekho/JB/cog_tracker.py", line 61, in on_ready
+    await self.set_status_done()
+  File "/home/tsekho/JB/cog_tracker.py", line 45, in set_status_done
+    count = self.api.get_player_count() if count is not None else "?"
+UnboundLocalError: local variable 'count' referenced before assignment
+Ignoring exception in on_ready
+Traceback (most recent call last):
+  File "/home/tsekho/.local/lib/python3.8/site-packages/discord/client.py", line 352, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/tsekho/JB/cog_tracker.py", line 61, in on_ready
+    await self.set_status_done()
+  File "/home/tsekho/JB/cog_tracker.py", line 45, in set_status_done
+    count = self.api.get_player_count() if count is not None else "?"
+UnboundLocalError: local variable 'count' referenced before assignment
+Ignoring exception in on_ready
+Traceback (most recent call last):
+  File "/home/tsekho/.local/lib/python3.8/site-packages/discord/client.py", line 352, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/tsekho/JB/cog_tracker.py", line 61, in on_ready
+    await self.set_status_done()
+  File "/home/tsekho/JB/cog_tracker.py", line 45, in set_status_done
+    count = self.api.get_player_count() if count is not None else "?"
+UnboundLocalError: local variable 'count' referenced before assignment
+Ignoring exception in on_ready
+Traceback (most recent call last):
+  File "/home/tsekho/.local/lib/python3.8/site-packages/discord/client.py", line 352, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/tsekho/JB/cog_tracker.py", line 61, in on_ready
+    await self.set_status_done()
+  File "/home/tsekho/JB/cog_tracker.py", line 45, in set_status_done
+    count = self.api.get_player_count() if count is not None else "?"
+UnboundLocalError: local variable 'count' referenced before assignment
